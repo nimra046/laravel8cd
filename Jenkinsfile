@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage("Build") {
             environment {
-                DB_HOST = credentials("3.252.252.20")
-                DB_DATABASE = credentials("laravel_database")
-                DB_USERNAME = credentials("nimra")
-                DB_PASSWORD = credentials("password")
+                DB_HOST = credentials("Host")
+                DB_DATABASE = credentials("Database")
+                DB_USERNAME = credentials("Username")
+                DB_PASSWORD = credentials("Password")
             }
             steps {
                 sh 'php --version'
