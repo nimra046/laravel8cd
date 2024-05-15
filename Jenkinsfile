@@ -44,7 +44,7 @@ pipeline {
         }
         stage("Docker build") {
             steps {
-                sh "docker build -t danielgara/laravel8cd ."
+                sh "docker build -t nimra046/laravel_jenkins ."
             }
         }
         stage("Docker push") {
